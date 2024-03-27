@@ -1,3 +1,22 @@
-<div>
-  <h1>App component</h1>
+<div class="border p-3 m-3 rounded">
+  <h1 class="border p-3 ">App component</h1>
+
+  <nav class="navbar navbar-expand-sm bg-info navbar-dark">
+    <ul class="navbar-nav ">
+      <li class="nav-item ">
+        <a class="nav-link text-black" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-black" routerLink="counter">Counter</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-black" routerLink="todolist">Todolist</a>
+      </li>
+    
+    </ul>
+  </nav>
+  <router-outlet></router-outlet>
+<!--  
+  <app-todolist></app-todolist>
+  <app-counter></app-counter> -->
 </div>
