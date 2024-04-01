@@ -1,8 +1,30 @@
 <div class="container">
     <h1>Countries List:</h1>
-<ol>
+    <table class="table table-striped">
+        <thead>
+            <tr >
+                <th class="bg-success">Country Name</th>
+                <th class="bg-success">Capital</th>
+                <th class="bg-success">Continent</th>
+                <th class="bg-success">Populations</th>
+                <th class="bg-success">Flag</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let country of allCountries">
+                <td>{{country.name.common}}</td>
+                <td>{{country.capital}}</td>
+                <td>{{country.continents}}</td>
+                <td>{{country.population}}</td>
+                <td>
+                    <img src="{{country.flags.png}}" width="100px" >
+                </td>
+            </tr>
+        </tbody>
+    </table>
+<!-- <ol>
     <li *ngFor="let country of allCountries">
         {{country.name.common}}
     </li>
-</ol>
+</ol> -->
 </div>
