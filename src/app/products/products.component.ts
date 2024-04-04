@@ -23,7 +23,7 @@ export class ProductsComponent {
 
     this.store.select("products").subscribe((res)=>{
       this.products = res.products
-      // console.log(this.products);
+      console.log(this.products);
       
     })
   }

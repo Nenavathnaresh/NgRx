@@ -29,7 +29,7 @@ import { productReducer } from './store/products.reducer';
     HttpClientModule,
     StoreModule.forRoot( {countries:countryReducer, products:productReducer}),
     EffectsModule.forRoot([CountryEffects, productsEffects]),
-    StoreDevtoolsModule.instrument({ maxAge: false, logOnly: !isDevMode() }),
+    StoreDevtoolsModule.instrument({ maxAge: false, logOnly: !isDevMode() })
   ],
   providers: [
     provideClientHydration()
