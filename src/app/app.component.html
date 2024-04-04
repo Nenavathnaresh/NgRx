@@ -1,3 +1,26 @@
-<div>
-  <h1>App component</h1>
+<div class="container">
+  <h1>Radio Boxes</h1>
+  <input type="radio" name="gender" value="male" [(ngModel)]="gen">:Male <br>
+  <input type="radio" name="gender" value="female" [(ngModel)]="gen">:Female <br>
+  <input type="radio" name="gender" value="others" [(ngModel)]="gen">:Others <br>
+  <h3>{{gen}}</h3>
+  <hr>
+  <h1>Check boxes</h1>
+  <input type="checkbox" name="" (change)="update($event)" value="react">:React <br>
+  <input type="checkbox" name="" (change)="update($event)" value="Python">:Python  <br>    
+  <input type="checkbox" name="" (change)="update($event)" value="Java">:Java <br>
+  <input type="checkbox" name="" (change)="update($event)" value="css">:CSS <br>
+  <input type="checkbox" name="" (change)="update($event)" value="Angular">:Angular <br>
+  <h3 *ngFor="let tech of techs">{{tech}}</h3>
+  <hr>
+  <h3>Selection boxes</h3>
+  <select [(ngModel)]="selectedCountry" name="" id="">
+    <option value="" selected disabled>please select country</option>
+    <option value="India">India</option>
+    <option value="Australia">Australia</option>
+    <option value="America">America</option>
+    <option value="France">France</option>
+    <option value="Germany">Germany</option>
+  </select>
+  <h3>{{selectedCountry}}</h3>
 </div>
