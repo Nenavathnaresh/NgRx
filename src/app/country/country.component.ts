@@ -34,7 +34,7 @@ export class CountryComponent {
   }
   getlogin(){
     this.store.dispatch(loadCountries())
-
+    alert(1)
     let body={
       loginName: "Admin",
       password : "Admin@321"
