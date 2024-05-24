@@ -1,12 +1,12 @@
 <div >
-    <form class="w-50 m-auto m-3 p-3 border border-success rounded" [formGroup]="loginForm">
+    <form class="w-25 m-auto m-3 p-3 border border-success rounded" [formGroup]="loginForm">
         <h1 class="text-center mb-3">Login</h1>
         <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" formControlName="username">
             <label for="floatingInput">Enter username</label>
         </div>
         <div class="form-floating">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" formControlName="password">
             <label for="floatingPassword">Password</label>
         </div>
         <div class="text-center m-3">
